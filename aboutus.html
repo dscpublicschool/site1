@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+	<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dsc Public School</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #FF6F00;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        .container {
+            width: 85%;
+            margin: 20px auto;
+        }
+        .search-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            padding: 12px;
+            width: 50%;
+            border: 1px solid #FF6F00;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+            font-size: 1em;
+        }
+        .search-bar input:focus {
+            border-color: #ff8c1a;
+            box-shadow: 0 0 5px #ff8c1a;
+        }
+        .staff-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-height: 75vh;
+            overflow-y: auto;
+        }
+
+        /* Staff Card Styles */
+        .staff-card {
+            background-color: white;
+            border: 1px solid #FF6F00;
+            border-radius: 8px;
+            width: 280px;
+            text-align: center;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .staff-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .staff-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+        .staff-card h3 {
+            margin: 10px 0 5px;
+            color: #FF6F00;
+            font-weight: 600;
+        }
+        .staff-card p {
+            margin: 5px 15px;
+            color: #555;
+            font-size: 0.95em;
+        }
+        .staff-card .icon {
+            margin-right: 5px;
+            color: #FF6F00;
+        }
+        footer {
+            background-color: #FF6F00;
+            color: white;
+            text-align: center;
+            padding: 1.2em 0;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+    </style>
+    <script>
+        function searchStaff() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const cards = document.getElementsByClassName("staff-card");
+
+            Array.from(cards).forEach((card) => {
+                const name = card.querySelector("h3").innerText.toLowerCase();
+                if (name.includes(input)) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+      
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"> <IMG src="img/2.png" height="70" width="100">Dsc Public School</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="" class="nav-item nav-link">About Us</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            
+                            <a href="annual.html" class="dropdown-item">Annual Event </a>
+			    <a href="fairwell.html" class="dropdown-item">Fairwell Event</a>
+                            <a href="navratri.html" class="dropdown-item">Navratri Celebration</a>
+                            <a href="st.html" class="dropdown-item">School Tour</a>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+                <IMG src="img/dsc.PNG" height="70" width="150">
+            </div>
+        </nav>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="🔍 Search Staff by Name..." 
+            onkeyup="searchStaff()">
+    </div>
+
+    <div class="staff-section">
+
+       
+        <div class="staff-card">
+            <img src="D:\DSC SITE\site\img\av.jpg" alt="Staff Photo">
+            <h3>Mr.Abhishek Vala</h3>
+            <p><span class="icon">🎓</span> M.A., B.Ed.</p>
+            <p><span class="icon">📅</span> 10 years of experience</p>
+            <p><span class="icon">🏫</span> Maths </p>
+        </div>
+
+        <div class="staff-card">
+            <img src="D:\DSC SITE\site\img\ap.jpg" alt="Staff Photo">
+            <h3>Mr.Abhay Parmar</h3>
+            <p><span class="icon">🎓</span> M.Sc, B.Ed.</p>
+            <p><span class="icon">📅</span> 8 years of experience</p>
+            <p><span class="icon">🏫</span> Science</p>
+        </div>
+
+		 <div class="staff-card">
+            <img src="D:\DSC SITE\site\img\ap.jpg" alt="Staff Photo">
+            <h3>Mr.Mahesh Dodiya</h3>
+            <p><span class="icon">🎓</span> M.Sc, B.Ed.</p>
+            <p><span class="icon">📅</span> 8 years of experience</p>
+            <p><span class="icon">🏫</span> Science</p>
+        </div>
+				
+		 <div class="staff-card">
+            <img src="D:\DSC SITE\site\img\ap.jpg" alt="Staff Photo">
+            <h3>Mr.Amit </h3>
+            <p><span class="icon">🎓</span> M.Sc, B.Ed.</p>
+            <p><span class="icon">📅</span> 8 years of experience</p>
+            <p><span class="icon">🏫</span> Science</p>
+        </div>
+
+		 <div class="staff-card">
+            <img src="D:\DSC SITE\site\img\ap.jpg" alt="Staff Photo">
+            <h3>Mr.Vimal Kukadiya</h3>
+            <p><span class="icon">🎓</span> M.Sc, B.Ed.</p>
+            <p><span class="icon">📅</span> 8 years of experience</p>
+            <p><span class="icon">🏫</span> Science</p>
+        </div>
+
+		 <div class="staff-card">
+            <img src="D:\DSC SITE\site\img\av.jpg" alt="Staff Photo">
+            <h3>Mrs.Beena Bijit</h3>
+            <p><span class="icon">🎓</span> M.A., B.Ed.</p>
+            <p><span class="icon">📅</span> 10 years of experience</p>
+            <p><span class="icon">🏫</span> Maths </p>
+        </div>
+
+        <div class="staff-card">
+            <img src="D:\DSC SITE\site\img\ap.jpg" alt="Staff Photo">
+            <h3>Mr.Deepak Joshi </h3>
+            <p><span class="icon">🎓</span> M.Sc, B.Ed.</p>
+            <p><span class="icon">📅</span> 8 years of experience</p>
+            <p><span class="icon">🏫</span> Science</p>
+        </div>
+
+		 <div class="staff-card">
+            <img src="D:\DSC SITE\site\img\ap.jpg" alt="Staff Photo">
+            <h3>Mr.Mukesh Chavda</h3>
+            <p><span class="icon">🎓</span> M.Sc, B.Ed.</p>
+            <p><span class="icon">📅</span> 8 years of experience</p>
+            <p><span class="icon">🏫</span> Science</p>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<footer>
+    <p>Address: Talala - Veraval Road , Ghunsiya </p>
+    <p>Phone: 96380 04007, 70435 81007  </p>
+</footer>
+
+</body>
+</html>
