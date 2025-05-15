@@ -29,41 +29,37 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+	
 	<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
         .container {
-            position: relative;
-            padding: 20px;
-            border: 2px solid #f0a500;
-            border-radius: 8px;
-            max-width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 900px;
             margin: auto;
+            padding: 20px;
+         
         }
-        .photo {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #f0a500;
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .image-content img {
+            max-width: 250px;
+            border-radius: 10px;
         }
         h2 {
-            margin-bottom: 5px;
-            color: #f0a500;
-        }
-        h4 {
-            margin-top: 0;
+            margin-bottom: 10px;
             color: #333;
         }
-        p {
-            text-align: justify;
+        h4 {
+            margin-bottom: 20px;
+            color: #777;
         }
     </style>
+</head>
+<body>
+
 </head>
 
 <body>
@@ -103,36 +99,28 @@
                 <IMG src="img/dsc.PNG" height="70" width="150">
             </div>
         </nav>
-  <div class="container">
-    <img src="img/team-3.jpg" alt="Mrs. Aesha Makawana" class="photo">
-    <h2>Mrs. Aesha Makawana</h2>
-    <h4>Principal</h4>
-	<br>
-	<br>
-	<br>
-    <p>
-        As the Principal of DSC Public School, I feel truly honored to be part of an institution that stands for 
-        excellence in education and the holistic development of every child. With a passion for teaching and learning, 
-        I have dedicated my journey to creating a school environment where students not only achieve academic success 
-        but also grow as confident, kind, and responsible individuals.
-    </p>
-    <p>
-        I strongly believe that every child is unique, and education should bring out the best in them. At DSC, we 
-        focus on value-based education, along with modern teaching techniques, to help students face today’s challenges 
-        while preparing them for tomorrow’s opportunities. With the support of our dedicated staff, I work every day 
-        to ensure that our classrooms are dynamic, inclusive, and inspiring.
-    </p>
-    <p>
-        Over the years, I’ve taken great pride in helping the school grow from strength to strength—academically, 
-        culturally, and socially. From early years to senior secondary, our focus remains on building a strong 
-        foundation, developing critical thinking, and instilling values like respect, responsibility, and resilience.
-    </p>
-    <p>
-        As an educator and as a mother, I understand the importance of trust and communication between the school 
-        and parents. I strive to maintain an open and warm relationship with every family that becomes a part of the 
-        DSC community. I am committed to continuing our school’s legacy and shaping it into a model institution not 
-        just in Gir Somnath, but across the state.
-    </p>
+
+<div class="container">
+    <div class="text-content">
+        <h2>Mrs. Aesha Makawana</h2>
+        <h4>Principal</h4>
+        <p>
+            As the Principal of DSC Public School, I feel truly honored to be part of an institution that stands for excellence in education and the holistic development of every child. With a passion for teaching and learning, I have dedicated my journey to creating a school environment where students not only achieve academic success but also grow as confident, kind, and responsible individuals.
+        </p>
+        <p>
+            I strongly believe that every child is unique, and education should bring out the best in them. At DSC, we focus on value-based education, along with modern teaching techniques, to help students face today’s challenges while preparing them for tomorrow’s opportunities. With the support of our dedicated staff, I work every day to ensure that our classrooms are dynamic, inclusive, and inspiring.
+        </p>
+        <p>
+            Over the years, I’ve taken great pride in helping the school grow from strength to strength—academically, culturally, and socially. From early years to senior secondary, our focus remains on building a strong foundation, developing critical thinking, and instilling values like respect, responsibility, and resilience.
+        </p>
+        <p>
+            As an educator and as a mother, I understand the importance of trust and communication between the school and parents. I strive to maintain an open and warm relationship with every family that becomes a part of the DSC community. I am committed to continuing our school’s legacy and shaping it into a model institution not just in Gir Somnath, but across the state.
+        </p>
+    </div>
+    <div class="image-content">
+        <img src="img/team-3.jpg" alt="Mrs. Aesha Makawana">
+    </div>
 </div>
+
 </body>
 </html>
