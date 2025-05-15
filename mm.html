@@ -29,41 +29,37 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+	
 	<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
         .container {
-            position: relative;
-            padding: 20px;
-            border: 2px solid #f0a500;
-            border-radius: 8px;
-            max-width: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 900px;
             margin: auto;
+            padding: 20px;
+           
         }
-        .photo {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #f0a500;
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .image-content img {
+            max-width: 250px;
+            border-radius: 10px;
         }
         h2 {
-            margin-bottom: 5px;
-            color: #f0a500;
-        }
-        h4 {
-            margin-top: 0;
+            margin-bottom: 10px;
             color: #333;
         }
-        p {
-            text-align: justify;
+        h4 {
+            margin-bottom: 20px;
+            color: #777;
         }
     </style>
+</head>
+<body>
+
 </head>
 
 <body>
@@ -103,37 +99,26 @@
                 <IMG src="img/dsc.PNG" height="70" width="150">
             </div>
         </nav>
-
-
 <div class="container">
-    <img src="img/team-2.jpg" alt="Mr. Mithun Makawana" class="photo">
-    <h2>Mr. Mithun Makawana</h2>
-    <h4>Managing Trustee</h4>
-	<br>
-	<br>
-	<br>
-    <p>
-        As the Managing Trustee of DSC Public School, I take great pride in leading an institution that has become 
-        a pillar of quality education in the Gir Somnath district. Since the beginning, my vision has been clear—to 
-        create a school that not only imparts academic knowledge but also nurtures values, discipline, and character 
-        in every student.
-    </p>
-    <p>
-        When I took on this responsibility, our school was offering limited grades. Today, with the blessings of our 
-        community and the dedication of our team, DSC Public School provides education from Nursery to Grade 12 in 
-        both English and Gujarati mediums. Our focus has always been on continuous growth, and I have personally 
-        overseen the development of modern infrastructure, including Smart Classrooms, high-tech labs, Box Cricket 
-        and sports facilities, and a state-of-the-art campus.
-    </p>
-    <p>
-        For me, education is not just about textbooks—it's about shaping good human beings who can lead with 
-        compassion, confidence, and integrity. I believe in hands-on involvement, and I make it a point to stay 
-        connected with students, teachers, and parents to understand their needs and aspirations.
-    </p>
-    <p>
-        My goal is to ensure that DSC Public School remains a beacon of learning, innovation, and moral excellence, 
-        producing responsible citizens who can contribute meaningfully to our society and nation.
-    </p>
+    <div class="text-content">
+        <h2>Mr. Mithun Makawana</h2>
+        <h4>Managing Trustee</h4>
+        <p>
+            As the Managing Trustee of DSC Public School, I take great pride in leading an institution that has become a pillar of quality education in the Gir Somnath district. Since the beginning, my vision has been clear—to create a school that not only imparts academic knowledge but also nurtures values, discipline, and character in every student.
+        </p>
+        <p>
+            When I took on this responsibility, our school was offering limited grades. Today, with the blessings of our community and the dedication of our team, DSC Public School provides education from Nursery to Grade 12 in both English and Gujarati mediums. Our focus has always been on continuous growth, and I have personally overseen the development of modern infrastructure, including Smart Classrooms, high-tech labs, Box Cricket and sports facilities, and a state-of-the-art campus.
+        </p>
+        <p>
+            For me, education is not just about textbooks—it's about shaping good human beings who can lead with compassion, confidence, and integrity. I believe in hands-on involvement, and I make it a point to stay connected with students, teachers, and parents to understand their needs and aspirations.
+        </p>
+        <p>
+            My goal is to ensure that DSC Public School remains a beacon of learning, innovation, and moral excellence, producing responsible citizens who can contribute meaningfully to our society and nation.
+        </p>
+    </div>
+    <div class="image-content">
+        <img src="img/team-2.jpg" alt="Mr. Mithun Makawana">
+    </div>
 </div>
 
 </body>
