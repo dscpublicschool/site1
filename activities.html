@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DSC Public School - Gallery and Videos</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet" />
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+		.slideshow-container img {
+			width: 100%;
+			aspect-ratio: 1 / 1;  /* makes it square */
+			object-fit: contain;   /* show entire image without cropping */
+			background-color: #000; /* optional: black background for blank spaces */
+			border-radius: 4px;
+}
+
+        .slideshow-container {
+            max-width: 400px;
+            margin: 0 auto 20px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .video-grid iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary">DSC PUBLIC SCHOOL</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="aboutus.html" class="nav-item nav-link">Our Staff</a>
+                    <a href="Activities.html" class="nav-item nav-link">Activities</a>
+                    <a href="About.html" class="nav-item nav-link">About Us</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="annual.html" class="dropdown-item">Annual Event</a>
+                            <a href="fairwell.html" class="dropdown-item">Fairwell Event</a>
+                            <a href="navratri.html" class="dropdown-item">Navratri Celebration</a>
+                            <a href="st.html" class="dropdown-item">School Tour</a>
+                        </div>
+                    </div>
+                    <a href="index.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <img src="img/dsc.PNG" height="70" width="150" alt="DSC Logo" />
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <h1>Gallery & Videos</h1>
+
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <img src="img/photo1.jpg" id="slideshow" alt="Slideshow Image" />
+        </div>
+
+        <!-- Video Gallery -->
+        <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/RUCFjcGYyq4?si=I1HFHfZ3XzNjlaYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/KbdY_-TA9dY?si=WSdtTNKwZLHzfwH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ta8txOf1Lg4?si=wW7KsjdtfJN2LPxP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/B9qle-R09Z8?si=tQf9SonEOxdxb2eX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/iah-JxTDJKg?si=4j3H8NupW4OzyLEV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/w8btEncdSms?si=JVmHsNHfRN9SKmpP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/r3_ZDeW8-PA?si=WE6FTqCWYtXOgVdh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/CDT2tiamvGk?si=tIculdtNsMP7C2Iv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" frameborder="0" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/b0G_VLF9Jjk?si=_0ZTIZ6bDpiNidcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  allowfullscreen></iframe>
+	   </div>
+    </div>
+
+    <script>
+        const images = [
+            "img/photo1.jpg",
+            "img/photo2.jpg",
+            "img/photo3.jpg",
+            "img/photo4.jpg",
+            "img/photo5.jpg",
+            "img/photo6.jpg",
+            "img/photo7.jpg",
+            "img/photo8.jpg",
+            "img/photo9.jpg",
+            "img/photo10.jpg"
+        ];
+        let currentIndex = 0;
+        const slideshow = document.getElementById('slideshow');
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            slideshow.src = images[currentIndex];
+        }, 3000);
+    </script>
+</body>
+
+</html>
